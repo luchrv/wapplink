@@ -1,8 +1,8 @@
-# wuLink
+# wappLink
 Link maker to send WhatsApp message to unsaved number without adding contact.
 
 Demo on: 
-https://wulink.luchrv.dev
+https://wapplink.luchrv.dev
 
 ## Author
 
