@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Link maker to send WhatsApp message to unsaved number without adding contact">
+    <meta name="keywords" content="wslink,send,whatsapp,unsaved,number,without,adding,contact,link,maker">
+    <title>wsLink - Link maker to send WhatsApp message to unsaved number without adding contact</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div id="header">
+        <img src="assets/images/WhatsUnknown.svg" alt="">
+        <div id="title">
+            wsLink
+        </div>
+        <div id="subtitle">Link maker to send WhatsApp message to unsaved number without adding contact</div>
+    </div>
+
+    <div id="form">
+        <input 
+            id="phone" 
+            type="text" 
+            placeholder="Phone number" 
+            onkeypress="return onlynumber(event)"
+            autofocus
+            autocomplete="off"
+        />
+        <button id="openapp" class="btnopen">WhatsApp</button>
+        <button id="openweb" class="btnopen">WhatsApp Web</button>
+    </div>
+
+    <div id="links">
+        <ul>
+            <li>WhatsApp:<br> <span id="linkapp"></span></li>
+            <li>WhatsApp Web:<br> <span id="linkweb"></span></li>
+        </ul>
+    </div>
+
+    <div id="description">
+        <ol>
+            <li>Key in the number of the person you wish to send a message on WhatsApp. 
+                Users must also include the country code.</li>
+            <li>Remove any zeroes, dashes or brackets while adding the phone number in the international format. 
+                For example, the phone number look like this after entering the number with the country code: <span>51999888777</span> (in Peru).</li>
+            <li>Click on the <span>WhatsApp</span> button to open the WhatsApp app,
+                or Click on the <span>WhatsApp Web</span> button to open the WhatsApp Web app.</li>
+            <li>If you pressed the <span>WhatsApp</span> button:
+                <ul>
+                    <li>A window will pop open prompting you to send a message to that phone number.</li>
+                    <li>Tap on the “Message” button and You will be taken to the WhatsApp app with a chat being open for the said contact.</li>
+                </ul>
+            </li>
+            <li>If you pressed the <span>WhatsApp Web</span> button, you will be taken to the WhatsApp Web app with a chat being open for the said contact.</li>
+        </ol>
+    </div>
+    <div id="cajacookies" class="footer">
+        <p>
+            This website uses cookies, if you stay here you accept their use.<br>
+            You can read more about the use of cookies in our 
+            <a href="police_privacy.html">privacy policy</a> and our 
+            <a href="police_cookies.html">cookie policy</a>.
+        </p>
+        <button onclick="acceptCookies()">Accept and close this message</button>
+    </div>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-87R5B38JX4"></script>
+    <script src="assets/js/base.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
