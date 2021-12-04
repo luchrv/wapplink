@@ -27,7 +27,22 @@ function acceptCookies() {
     cajacookies.style.display = 'none';
 }
 
+/**
+ * check the navigator language
+ */
+function checkLang() {
+    let url = window.location.href;
+    var userLang = navigator.language || navigator.userLanguage;
+
+    if (/^es\b/.test(userLang)) {
+        if (!(/.*index.es.*/.test(url)) && !(/.*police.*/.test(url))) {
+            window.location.replace('index.es.html');
+        }
+    }
+}
+
 /* run on web load */
 document.addEventListener('DOMContentLoaded', function () {
+    checkLang();
     checkAcceptedCookies();
 }, false);
